@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+:root{
+    --primary:#ffd65c;
+    --secondary:#191d34;
+}
+body{
+    color: var(--primary);
+    font-family: 'Crimson Text', serif;
+    background-color: var(--secondary);
+}
+.titles{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 30px;
+}
+.subtitles{
+    font-size: 33px;
+    transform: translateX(15px);
+}
+.body--pgcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.body--pg{
+    font-size: 20px;
+}
+span{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-shadow: 5px 2px 10px var(--primary);
+}
+.hover--con{
+    margin-left: 30px;
+    position: relative;
+}
+.hover--con img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+.hover--con div{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    background-color: rgba(0,0,0, 0.4);
+    opacity: 0;
+    transition: all .3s;
+}
+.fa-heart{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    line-height: 260px;
+}
+.fa-heart:hover{
+    font-size: 50px;
+}
+.hover--con div:hover{
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+.hover--con{
+    backdrop-filter: blur(10px);
+}
+.langs{
+    font-size: 25px;
+    text-align: center;
+    margin: 70px 0 0px 0;
+}
+.card--con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card--con div{
+    margin: 35px 0;
+}
+.imgs{
+    width: 200px;
+    height: 300px;
+    background-color: var(--primary);
+    border: #000;
+    margin: 0 10px;
+}
+.imgs p{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 17px;
+}
+@media(max-width:820px){
+    .titles{
+        font-size: 34px;
+        float: left;
+        transform: translateX(15px);
+        margin-top: 30px;
+        margin-bottom: unset;
+    }
+    .subtitles{
+        font-size: 28px;
+        margin-top: 80px;
+    }
+    .body--pgcon{
+        display: block;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .body--pg{
+        margin-bottom: 15px;
+    }
+    .main--con{
+        display: grid;
+        place-items: center;
+    }
+    .hover--con{
+        margin: unset;
+    }
+    .hover--con img{
+        width: 250px;
+        height: 250px;
+    }
+    .hover--con div{
+        width: 250px;
+        height: 250px;
+        overflow-y:hidden;
+    }
+    .langs{
+        font-size: 23px;
+        text-align: center;
+        margin: 10px 0 30px 0;
+    }
+    .card--con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card--con>.imgs{
+        width: 200px;
+        height: 300px;
+        background-color: var(--primary);
+        margin: 20px 38px;
+    }
+}
+@media(max-width:562px){
+    .titles{
+        font-size: 27px;
+        float: left;
+        transform: translateX(15px);
+        margin-top: 30px;
+        margin-bottom: unset;
+    }
+    .subtitles{
+        font-size: 25px;
+        margin-top: 80px;
+    }
+    .body--pgcon{
+        display: block;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .body--pg{
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+    span{
+        color: #fff;
+        font-size: 23px;
+        font-weight: bolder;
+        text-shadow: 5px 2px 10px var(--primary);
+    }
+    .card--con{
+        display: grid;
+        place-items: center;
+        align-items: center;
+    }
+}
